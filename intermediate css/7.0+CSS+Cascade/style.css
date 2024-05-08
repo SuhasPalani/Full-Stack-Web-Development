@@ -10,3 +10,20 @@ p {
   margin: 0;
   padding: 0;
 }
+
+.white-text {
+  color: white;
+}
+
+div[class="box inner-box"]{
+  background-color: red;
+  padding: 10px;
+}
+body{
+  padding: 10px;
+  border: 1px ;
+}
+
+#outer-box {
+  background-color: purple;
+}
