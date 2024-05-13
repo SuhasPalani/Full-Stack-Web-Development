@@ -1,30 +1,18 @@
-// function getMilk(){
-//     console.log("Get Milk");
-//     console.log("Get Milk");
-//     console.log("Get Milk");
-//     console.log("Get Milk");
-// };
+function bmiMessage(weight, height) {
+  let bmiValue = weight / (height * height);
+  let message = "";
 
-// getMilk();
+  if (bmiValue < 18.5) {
+      message = "Your BMI is " + bmiValue.toFixed(1) + ", so you are underweight.";
+  } else if (bmiValue >= 18.5 && bmiValue <= 24.9) {
+      message = "Your BMI is " + bmiValue.toFixed(1) + ", so you have a normal weight.";
+  } else {
+      message = "Your BMI is " + bmiValue.toFixed(1) + ", so you are overweight.";
+  }
 
-function getMilk() {   
-  console.log("leaveHouse");
-  console.log("moveRight");
-  console.log("moveRight");
-  console.log("moveUp");
-  console.log("moveUp");
-  console.log("moveUp");
-  console.log("moveUp");
-  console.log("moveRight");
-  console.log("moveRight");
-  console.log("moveLeft");
-  console.log("moveLeft");
-  console.log("moveDown");
-  console.log("moveDown");
-  console.log("moveDown");
-  console.log("moveDown");
-  console.log("moveLeft");
-  console.log("moveLeft");
-  console.log("enterHouse");
+  return message;
 }
 
+// Example usage:
+var result = bmiMessage(65, 1.8);
+console.log(result);
