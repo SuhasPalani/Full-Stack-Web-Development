@@ -11,7 +11,7 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/contact", (req, res) => {
-  res.send("<h1>Contact Me</h1><p>Phone: +44123456789</p>");
+  res.send("<h1>Contact Me</h1><p>Phone: +17738504663</p>");
 });
 
 app.listen(port, () => {
