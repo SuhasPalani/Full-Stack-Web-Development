@@ -9,7 +9,22 @@
 //6. Make sure that the final website is styled like the example shown here:
 //https://l1pp6.csb.app/
 
-//HINT: You will need to study the classes in teh styles.css file to appy styling.
+import React from "react";
+import ReactDOM from "react-dom";
+import Header from "./Header";
+import App from "./App";
+
+
+ReactDOM.render(
+  <div>
+    <Header />,
+    <App />
+  </div>,
+
+  document.getElementById("root")
+);
+
+//HINT: You will need to study the classes in teh styles.css file to apply styling.
 
 // If you're running this locally in VS Code use the commands:
 // npm install
