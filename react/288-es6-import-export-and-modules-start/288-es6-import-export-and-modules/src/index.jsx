@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import pi,{douPi,triPi} from "./math";
+// import pi,{douPi,triPi} from "./math";
+import * as pi from "./math";
 
 
 ReactDOM.render(
   <ul>
-    <li>{pi}</li>
-    <li>{douPi()}</li>
-    <li>{triPi()}</li>
+    <li>{pi.default}</li>
+    <li>{pi.douPi()}</li>
+    <li>{pi.triPi()}</li>
   </ul>,
   document.getElementById("root")
 );
