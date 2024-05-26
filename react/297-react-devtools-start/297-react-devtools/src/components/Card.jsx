@@ -1,5 +1,6 @@
 import React from "react";
 import Avatar from "./Avatar";
+import Detail from "./Detail";
 
 
 function Card(props) {
@@ -10,8 +11,13 @@ function Card(props) {
         <Avatar img={props.img}/>
       </div>
       <div className="bottom">
-        <p className="info">{props.tel}</p>
-        <p className="info">{props.email}</p>
+        <Detail 
+        DetailInfo={props.tel}
+        />
+        <Detail 
+        DetailInfo={props.email}
+        />
+       
       </div>
     </div>
   );
