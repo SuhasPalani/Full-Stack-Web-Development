@@ -24,14 +24,21 @@ var numbers = [3, 56, 2, 48, 5];
 
 // console.log(newNumbers);
 //Reduce - Accumulate a value by doing something to each item in an array.
-const newNumbers = numbers.reduce(function (acc, cur) {
-  return acc + cur;
-});
+// const newNumbers = numbers.reduce(function (acc, cur) {
+//   return acc + cur;
+// });
 
-console.log(newNumbers);
+// console.log(newNumbers);
 //Find - find the first item that matches from an array.
 
+const found = numbers.find((ele) => ele > 10);
+
+console.log(found);
 //FindIndex - find the index of the first item that matches.
+
+const founds = numbers.findIndex((ele) => ele > 10);
+
+console.log(founds);
 
 // If you're running this locally in VS Code use the commands:
 // npm install
