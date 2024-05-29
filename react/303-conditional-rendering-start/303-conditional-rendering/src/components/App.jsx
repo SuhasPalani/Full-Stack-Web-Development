@@ -3,7 +3,7 @@ import Login from "./Login";
 
 var isLoggedIn = false;
 
-const currentTime = new Date(2019, 11, 1, 9).getHours();
+const currentTime = new Date().getHours();
 console.log(currentTime);
 
 function App() {
